@@ -95,7 +95,7 @@ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --boots
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install kafka-python-ng websocket
+pip install kafka-python-ng websocket-client
 ```
 
 ---
