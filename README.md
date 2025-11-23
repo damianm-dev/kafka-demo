@@ -43,6 +43,7 @@ sudo apt-get install -y openjdk-11-jdk
 ## 6. Install Kafka
 Download the latest Kafka release and extract it:
 ```bash
+wget https://dlcdn.apache.org/kafka/4.1.1/kafka_2.13-4.1.1.tgz
 tar -xzf kafka_2.13-4.1.1.tgz
 cd kafka_2.13-4.1.1
 ```
@@ -94,7 +95,7 @@ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --boots
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install kafka-python-ng
+pip install kafka-python-ng websocket
 ```
 
 ---
